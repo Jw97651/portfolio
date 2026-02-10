@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Josh Wright">
+    <meta name="keywords" content="HTML, CSS, Web Design">
+    <meta name="description" content="My Assessment Webpage">
+    <title>Josh Wright</title>
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+
+<body id="top">
+
+<header class="site-header">
+    <img src="assets/images/webpage-header.jpg" alt="Header image" class="header-img">
+
+    <nav class="site-nav">
+        <ul class="nav">
+            <li><a href="#assessment" title="My Assessment">My Assessment</a></li>
+            <li><a href="#questions" title="Questions">Questions</a></li>
+            <li><a href="#resources" title="Resources">Resources</a></li>
+            <li><a href="#contact" title="Contact">Contact</a></li>
+            <li>
+                <a href="https://www.w3schools.com/html/default.asp" title="Favorite Site" target="_blank" rel="noopener">
+                    Favorite Site
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main class="site-main">
+    <div class="wrap">
+
+        <section id="assessment">
+            <h2>My Assessment</h2>
+
+            <img src="assets/images/webpage-image.jpg" alt="Webpage image" class="content-img">
+
+            <p>
+                The most important goal of effective communication is clarity. Clarity is not the same as simplicity.
+                Often, simple things are clear if the message is intended to be brief and small, but often the message
+                is about a complex relationship that can only be presented with a necessarily large amount of data.
+            </p>
+
+            <p class="alert">
+                This complexity can be made to appear clear by effective organization and presentation and need not
+                be reduced to meaningless "bite-sized" chunks of data, as simplification usually does.
+            </p>
+
+            <p>
+                Clarity refers to the focus on one particular message or goal at a time, rather than attempting to
+                accomplish too much at once. Simplicity is often responsible for the "dumbing" of information rather
+                than the illumination of it.
+            </p>
+        </section>
+
+        <section id="questions">
+            <h2>Questions</h2>
+
+            <p>Please answer the following questions below. Remember to mark up the information properly using HTML</p>
+
+            <p class="q">
+                <strong>Explain the difference between the "alt" attribute and the "title" attribute.</strong><br>
+                <span class="ans">
+                    The alt attribute uses text that describes an image if it can't be displayed and is also used by screen readers for accessibility purposes. <br>
+                    The title attribute provides information that appears as a tooltip when the user hovers over an element with a mouse, but it is not reliable for accessibility.
+                </span>
+            </p>
+
+            <p class="q">
+                <strong>Please provide an example of how to mark up a definition from the dictionary below</strong><br>
+            </p>
+
+            <dl class="ans">
+                <dt><dfn>Header</dfn></dt>
+                <dd>
+                    In HTML, the header is used to define the introductory content of a document or a section.
+                    This tag typically contains headings, introductory text, navigation links,
+                    and sometimes logos.
+                </dd>
+            </dl>
+
+            <p class="q">
+                <strong>Provide an example of link pointing to your favorite site</strong><br>
+                <span class="ans">
+                    <a href="https://www.w3schools.com/html/">My favorite site</a>
+                </span>
+            </p>
+        </section>
+
+    </div>
+</main>
+
+<footer class="site-footer">
+    <p>&copy; 2026 Josh Wright - <a href="#top" title="Back to top">Back to Top</a></p>
+</footer>
+
+</body>
+</html>
