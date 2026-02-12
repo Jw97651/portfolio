@@ -1,0 +1,97 @@
+#Resume.tabcontent {
+  max-width: 1100px;
+  margin: 0;
+  padding: 28px 32px;
+  line-height: 1.6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+  background: #fff;
+}
+
+#Resume h2 {
+  margin: 0 0 12px;
+  font-size: 1.75rem;
+  font-weight: 800;
+}
+
+#Resume h3 {
+  margin: 18px 0 4px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+#Resume h4 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+#Resume p {
+  margin: 6px 0 10px;
+  font-size: 0.95rem;
+}
+
+#Resume a {
+  color: #00f;
+  text-decoration: underline;
+}
+
+#Resume a:visited {
+  color: #551a8b;
+}
+
+#Resume a:hover,
+#Resume a:focus {
+  text-decoration: underline;
+}
+
+#Resume [itemscope][itemtype="http://schema.org/Organization"],
+#Resume [itemscope][itemtype="http://schema.org/EducationalOrganization"] {
+  margin: 14px 0 18px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+#Resume .time {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#Resume p[itemprop="description"] {
+  margin-left: 24px;
+  max-width: 1000px;
+}
+
+#Resume ul {
+  margin: 6px 0 0 42px;
+  padding: 0;
+  max-width: 1000px;
+}
+
+#Resume li {
+  margin: 6px 0;
+}
+
+#Resume strong {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #Resume.tabcontent {
+    padding: 18px 16px;
+  }
+
+  #Resume h2 {
+    font-size: 1.45rem;
+  }
+
+  #Resume ul {
+    margin-left: 26px;
+  }
+
+  #Resume p[itemprop="description"] {
+    margin-left: 16px;
+  }
+}
