@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Value History</title>
+    <link rel="stylesheet" href="assets/style/style.css" />
+</head>
+
+<body>
+    <main class="page">
+        <h1>Currency Value History</h1>
+
+        <form id="currencyForm" class="form" autocomplete="off">
+            <div class="field">
+                <label for="baseCurrency">Base Currency:</label>
+                <select id="baseCurrency" name="baseCurrency">
+                    <option value="" selected>Select a currency</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="MXN">MXN</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="convertCurrency">Convert to Currency:</label>
+                <select id="convertCurrency" name="convertCurrency">
+                    <option value="" selected>Select a currency</option>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="MXN">MXN</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="fromDate">From Date:</label>
+                <input id="fromDate" name="fromDate" type="date" />
+            </div>
+
+            <div class="field">
+                <label for="toDate">To Date:</label>
+                <input id="toDate" name="toDate" type="date" />
+            </div>
+
+            <div id="errorBox" class="error" aria-live="polite"></div>
+
+            <div class="actions">
+                <button type="submit" class="btn">Show Results</button>
+                <button type="button" id="clearBtn" class="btn">Clear</button>
+            </div>
+        </form>
+
+        <section id="results" class="results">
+            <div id="urlBox" class="url"></div>
+            <canvas id="chartjs-0" width="900" height="420"></canvas>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
+</body>
+</html>
