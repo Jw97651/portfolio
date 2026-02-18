@@ -1,100 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Josh Wright | Portfolio</title>
-    <link rel="stylesheet" href="assets/style/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josh Wright | Portfolio</title>
+  <link rel="stylesheet" href="assets/style/style.css" />
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="brand">
-            <span class="brand-white">Josh</span>
-            <span class="brand-accent">Wright</span>
+  <header class="site-header">
+    <div class="brand">
+      <span class="brand-white">Josh</span>
+      <span class="brand-accent">Wright</span>
+    </div>
+
+    <nav class="nav">
+      <a href="#" class="nav-cta" data-tab="contact">HIRE ME</a>
+    </nav>
+  </header>
+
+  <nav class="topnav2" id="topnav2">
+    <a href="skills/index.html"tablink is-active" data-tab="about">Skills</a>
+    <a href="projects/index.html" class="" data-tab="projects">PROJECTS</a>
+    <a href="resume/index.html" class="tablink">RESUME</a>
+    <a href="#" class="tablink" data-tab="contact">CONTACT</a>
+
+    <div class="dropdown2">
+      <button class="dropbtn2" type="button">
+        WORK EXAMPLES <span class="chev">▼</span>
+      </button>
+      <div class="dropdown2-content">
+        <a href="currency value history/index.html">Currency Value History</a>
+        <a href="JavaScript_Calculator/index.html">JavaScript Calculator</a>
+        <a href="web-1/index.html">Web 1</a>
+      </div>
+    </div>
+
+    <a href="javascript:void(0)" class="icon2" id="menuBtn">☰</a>
+  </nav>
+
+  <main class="tabwrap">
+    <section class="tabpanel is-active" id="tab-about">
+      <div class="tab-inner tab-grid">
+        <div class="tab-left">
+          <div class="photo-frame photo-frame-sm">
+            <img src="assets/images/819.jpg" alt="Professional photo of Josh Wright" />
+          </div>
         </div>
 
-        <nav class="nav">
-            <a href="#home" class="nav-link">HOME</a>
-            <a href="#projects" class="nav-link">PROJECTS</a>
-            <a href="#contact" class="nav-link">CONTACT</a>
-            <a href="#contact" class="nav-cta">HIRE ME</a>
-        </nav>
-    </header>
+        <div class="tab-right">
+          <h1 class="tab-title">About</h1>
 
-    <main id="home" class="hero">
+          <p class="section-text">
+            Highly motivated Information Science student, with hands on experience working with HTML, CSS, JavaScript, C++, Java, Python, SQL, and Microsoft Power BI.
+          </p>
 
-        <section class="hero-left">
-            <p class="eyebrow">HELLO THERE, WELCOME TO MY SITE</p>
+          <div class="gap"></div>
 
-            <h1 class="headline">
-                I’m <span class="headline-white">Josh Wright</span>
-            </h1>
+          <p class="section-text">
+            Recognized for strong problem solving ability, attention to detail, as well as time management and the discipline to convert complex requirements into clean, functional systems. Passionate about being a team player to complete a common goal.
+          </p>
 
-            <p class="subtext">
-                Highly motivated Information Science student, with hands on experience working with HTML, CSS, JavaScript, C++, Java, Python, SQL, and Microsoft Power BI.
-            </p>
+          <div class="gap"></div>
 
-            <p class="subtext">
-                Recognized for strong problem solving ability, attention to detail, as well as time management and the discipline to convert complex requirements into clean, functional systems. Passionate about being a team player to complete a common goal.
-            </p>
+          <p class="section-text">
+            Currently seeking entry-level opportunities in web development, backend/database development, as well as open to trying new things within the IT industry.
+          </p>
 
-            <p class="subtext">
-                Currently seeking entry-level opportunities in web development, backend/database development, as well as open to trying new things within the IT industry.
-            </p>
-
-            <div class="buttons">
-                <a class="btn btn-primary" href="#projects">SEE PORTFOLIO</a>
-                <a class="btn btn-ghost" href="#contact">CONTACT ME</a>
-            </div>
-        </section>
-
-        <section class="hero-right">
-            <div class="photo-frame">
-                <img src="assets/images/819.jpg" alt="Professional photo of Josh Wright" />
-            </div>
-        </section>
-
-    </main>
-
-    <section id="projects" class="section">
-        <div class="section-inner">
-            <h2 class="section-title">Projects</h2>
-
-            <div class="cards">
-
-                <a class="card" href="currency value history/index.html">
-                    <h3>Currency Value History</h3>
-                    <p>View historical exchange rates between currencies.</p>
-                </a>
-
-                <a class="card" href="JavaScript_Calculator/index.html">
-                    <h3>JavaScript Calculator</h3>
-                    <p>Open the calculator project.</p>
-                </a>
-
-                <a class="card" href="web-1/index.html">
-                    <h3>Web 1</h3>
-                    <p>Open my Web 1 project.</p>
-                </a>
-
-                <a class="card" href="resume/index.html">
-                    <h3>Resume</h3>
-                    <p>View my resume.</p>
-                </a>
-
-            </div>
+          <div class="buttons">
+            <a class="btn btn-primary" href="#" data-tab="projects">SEE PORTFOLIO</a>
+            <a class="btn btn-ghost" href="#" data-tab="contact">CONTACT ME</a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="contact" class="section">
-        <div class="section-inner">
-            <h2 class="section-title">Contact</h2>
-            <p class="section-text">Email: jwright2@ualr.edu</p>
-            <p class="section-text">LinkedIn: www.linkedin.com/in/josh-wright-1a517927b</p>
+    <section class="tabpanel" id="tab-projects">
+      <div class="tab-inner">
+        <h1 class="tab-title">Projects</h1>
+
+        <div class="cards">
+          <a class="card" href="currency value history/index.html">
+            <h3>Currency Value History</h3>
+            <p>View historical exchange rates between currencies.</p>
+          </a>
+
+          <a class="card" href="JavaScript_Calculator/index.html">
+            <h3>JavaScript Calculator</h3>
+            <p>Open the calculator project.</p>
+          </a>
+
+          <a class="card" href="web-1/index.html">
+            <h3>Web 1</h3>
+            <p>Open my Web 1 project.</p>
+          </a>
+
+          <a class="card" href="resume/index.html">
+            <h3>Resume</h3>
+            <p>View my resume.</p>
+          </a>
         </div>
+      </div>
     </section>
 
-</body>
-</html>
+    <section class="tabpanel" id="tab-contact">
+      <div class="tab-inner">
+        <h1 class="tab-title">Contact</h1>
+
+        <div class="contact-card">
