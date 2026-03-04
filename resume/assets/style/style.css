@@ -173,14 +173,18 @@ a{
   display:block;
 }
 
-.dropdown2-content a{
+.dropdown2-content-inner{
+  padding:6px;
+}
+
+.dropdown2-content-inner a{
   display:block;
   padding:10px 12px;
   border-radius:12px;
   color:rgba(255,255,255,0.86);
 }
 
-.dropdown2-content a:hover{
+.dropdown2-content-inner a:hover{
   background:rgba(255,255,255,0.06);
 }
 
