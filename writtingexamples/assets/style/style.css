@@ -490,3 +490,8 @@ img {
     padding: 1rem 0;
   }
 }
+
+.doc-icon-word{
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+}
