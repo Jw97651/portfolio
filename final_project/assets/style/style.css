@@ -1,0 +1,265 @@
+:root {
+  --bg1: #061627;
+  --bg2: #0b2f4f;
+  --accent: #ff9f1c;
+  --accent2: #2ec4b6;
+  --text: #ffffff;
+  --muted: rgba(255, 255, 255, 0.72);
+  --card: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.18);
+  --shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.hero {
+  min-height: 85vh;
+  padding: 28px 8%;
+  background:
+    radial-gradient(circle at top right, rgba(255, 159, 28, 0.3), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(46, 196, 182, 0.25), transparent 30%),
+    linear-gradient(135deg, #061627, #0b2f4f);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.nav-btn,
+.primary-btn,
+.search-box button,
+.location-card button {
+  text-decoration: none;
+  border: none;
+  background: linear-gradient(135deg, var(--accent), #ffbf69);
+  color: #061627;
+  font-weight: 800;
+  padding: 13px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.nav-btn:hover,
+.primary-btn:hover,
+.search-box button:hover,
+.location-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(255, 159, 28, 0.25);
+}
+
+.hero-content {
+  display: grid;
+  align-items: center;
+  min-height: 70vh;
+  max-width: 850px;
+}
+
+.tagline {
+  color: var(--accent);
+  font-weight: 800;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero h1 {
+  font-size: clamp(2.7rem, 6vw, 5.4rem);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  color: var(--muted);
+  font-size: 1.2rem;
+  line-height: 1.7;
+  max-width: 690px;
+  margin-bottom: 34px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  padding: 70px 8%;
+}
+
+.info-card,
+.tool-card,
+.summary-card,
+.location-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+}
+
+.info-card {
+  padding: 30px;
+}
+
+.info-card h3 {
+  color: var(--accent);
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+}
+
+.info-card p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.tool-section {
+  padding: 20px 8% 90px;
+}
+
+.tool-card {
+  padding: 36px;
+}
+
+.tool-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.tool-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.tool-header p {
+  color: var(--muted);
+}
+
+.search-box {
+  display: flex;
+  gap: 14px;
+  max-width: 760px;
+  margin: 0 auto 20px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 16px 18px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  outline: none;
+  background: rgba(255, 255, 255, 0.92);
+  color: #061627;
+  font-size: 1rem;
+}
+
+#message {
+  text-align: center;
+  min-height: 24px;
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.location-results {
+  display: grid;
+  gap: 14px;
+  max-width: 850px;
+  margin: 0 auto 26px;
+}
+
+.location-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding: 18px;
+}
+
+.location-card p {
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.location-card button {
+  padding: 10px 18px;
+  flex-shrink: 0;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin: 30px 0;
+}
+
+.summary-card {
+  padding: 22px;
+  text-align: center;
+}
+
+.summary-card span {
+  display: block;
+  color: var(--muted);
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+.summary-card strong {
+  font-size: 1.25rem;
+}
+
+.chart-container {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 24px;
+  min-height: 430px;
+}
+
+footer {
+  text-align: center;
+  padding: 28px;
+  color: var(--muted);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 900px) {
+  .info-grid,
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .search-box,
+  .location-card {
+    flex-direction: column;
+  }
+
+  .search-box button,
+  .location-card button {
+    width: 100%;
+  }
+
+  .tool-card {
+    padding: 24px;
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UV Exposure Tracking Tool</title>
+  <link rel="stylesheet" href="assets/style/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <header class="hero">
+    <nav class="navbar">
+      <div class="logo">UV Exposure Tracker</div>
+      <a href="#tool" class="nav-btn">Check UV Index</a>
+    </nav>
+
+    <section class="hero-content">
+      <div>
+        <p class="tagline">Southern Skin Cancer Treatment Centers of America</p>
+        <h1>Monitor UV Exposure With Confidence</h1>
+        <p class="hero-text">
+          Enter a city or zip code to view recent and upcoming UV index levels.
+          This tool helps patients make informed decisions about safe sun exposure.
+        </p>
+        <a href="#tool" class="primary-btn">Start Tracking</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="info-grid">
+      <div class="info-card">
+        <h3>Past UV Levels</h3>
+        <p>Review UV index data from the previous five days.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Future Forecast</h3>
+        <p>View predicted UV levels for the next five days.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Location Based</h3>
+        <p>Search by city or zip code to find UV data across the United States.</p>
+      </div>
+    </section>
+
+    <section id="tool" class="tool-section">
+      <div class="tool-card">
+        <div class="tool-header">
+          <h2>UV Index Lookup</h2>
+          <p>Enter a city or zip code to generate a UV exposure chart.</p>
+        </div>
+
+        <div class="search-box">
+          <input type="text" id="locationInput" placeholder="Example: Dallas, TX or 72201" />
+          <button id="searchBtn">Search</button>
+        </div>
+
+        <p id="message"></p>
+
+        <div id="locationResults" class="location-results"></div>
+
+        <div class="summary-grid">
+          <div class="summary-card">
+            <span>Selected Location</span>
+            <strong id="selectedLocation">—</strong>
+          </div>
+
+          <div class="summary-card">
+            <span>Highest UV</span>
+            <strong id="highestUV">—</strong>
+          </div>
+
+          <div class="summary-card">
+            <span>Risk Level</span>
+            <strong id="riskLevel">—</strong>
+          </div>
+        </div>
+
+        <div class="chart-container">
+          <canvas id="uvChart"></canvas>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>UV Exposure Tracking Tool | Proof of Concept Web Application</p>
+  </footer>
+
+  <script src="assets/scripts/scripts.js"></script>
+</body>
+</html>
